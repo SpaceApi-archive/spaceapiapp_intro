@@ -1,0 +1,13 @@
+{
+    "App": "Home",
+    "Description": "The landing page that a visitor sees first.",
+    "Authors": [
+        {
+            "Name": "Romain Schmitz",
+            "Nickname": "Slopjong",
+            "Hackerspace": "Syn2cat"
+        }
+    ],
+    "License": "",
+    "Updated": "20.5.2013"
+}
