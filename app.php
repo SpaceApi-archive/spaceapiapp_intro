@@ -1,20 +1,11 @@
 <?php
 
-//********************************************************************
-// do not edit this section
-
 if(!defined("APPSDIR"))
     die("Direct access is not allowed!");
 
-$app_dir = realpath(dirname(__FILE__));
-// remove the full path of the document root
-$app_dir = str_replace(ROOTDIR, "", $app_dir);
+/**********************************************************************************/
 
-$page->setActivePage(basename($app_dir));
-
-//********************************************************************
-
-$page->addScript("$app_dir/scripts/jquery.animate-colors.js");
+$page->addScript("scripts/jquery.animate-colors.js");
 
 $page->addInlineStyle('.intro-example:after { content: "Space API Example" }');
 $page->addInlineStyle('.intro-hide-message { position: absolute; left: -1000px; top: -1000px}');
@@ -95,9 +86,9 @@ $html = <<<HTML
                     </ol>
                     
                     <div class="carousel-inner" style="height: 400px;">
-                        <div style="text-align: center" class="active item"><img style="width:100%" src="$app_dir/img/hackerspace-globe.png" title="globe"></div>
-                        <div style="text-align: center" class="item"><img style="width: 100%;" src="$app_dir/img/hackerspace-wall.png" title="wall"></div>
-                        <div style="text-align: center" class="item"><img style="height: 100%;" src="$app_dir/img/my-hackerspace.png" title="android"></div>
+                        <div style="text-align: center" class="active item"><img style="width:100%" src="%APPDIR%/img/hackerspace-globe.png" title="globe"></div>
+                        <div style="text-align: center" class="item"><img style="width: 100%;" src="%APPDIR%/img/hackerspace-wall.png" title="wall"></div>
+                        <div style="text-align: center" class="item"><img style="height: 100%;" src="%APPDIR%/img/my-hackerspace.png" title="android"></div>
                     </div>
                     
                     <a class="carousel-control left" href="#inro-apps-carousel" data-slide="prev">&lsaquo;</a>
